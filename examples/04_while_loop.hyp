@@ -1,0 +1,10 @@
+Focus {
+
+  induce counter: number = 1;
+
+  while (counter <= 5) {
+      observe "Zähler: " + counter;
+      counter = counter + 1;
+  }
+
+} Relax

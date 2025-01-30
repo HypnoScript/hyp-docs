@@ -1,0 +1,32 @@
+Focus {
+
+  session BankAccount {
+      expose owner: string;
+      conceal balance: number;
+
+      suggestion constructor(name: string, initialBalance: number) {
+          this.owner = name;
+          this.balance = initialBalance;
+      }
+
+      suggestion deposit(amount: number) {
+          this.balance = this.balance + amount;
+          observe "Eingezahlt: " + amount + ". Neuer Kontostand: " + this.balance;
+      }
+
+      suggestion withdraw(amount: number) {
+          if (amount > this.balance) {
+              observe "Nicht genug Guthaben!";
+          } else {
+              this.balance = this.balance - amount;
+              observe "Abgehoben: " + amount + ". Neuer Kontostand: " + this.balance;
+          }
+      }
+  }
+
+  induce myAccount = BankAccount("Alice", 100);
+  myAccount.deposit(50);
+  myAccount.withdraw(30);
+  myAccount.withdraw(150);
+
+} Relax

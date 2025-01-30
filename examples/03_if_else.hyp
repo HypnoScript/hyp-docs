@@ -1,0 +1,11 @@
+Focus {
+
+  induce x: number = 7;
+
+  if (x > 5) {
+      observe "x ist größer als 5";
+  } else {
+      observe "x ist 5 oder kleiner";
+  }
+
+} Relax

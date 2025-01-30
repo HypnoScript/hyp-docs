@@ -1,0 +1,9 @@
+Focus {
+
+  observe "Starte...";
+
+  drift(2000);
+
+  observe "Nach 2 Sekunden geht es weiter.";
+
+} Relax

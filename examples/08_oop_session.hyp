@@ -1,0 +1,21 @@
+Focus {
+
+  session Person {
+      expose name: string;
+
+      suggestion constructor(newName: string) {
+          this.name = newName;
+      }
+
+      suggestion greet() {
+          observe "Hallo, ich bin " + this.name;
+      }
+  }
+
+  induce alice = Person("Alice");
+  induce bob = Person("Bob");
+
+  alice.greet();
+  bob.greet();
+
+} Relax

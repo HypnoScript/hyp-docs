@@ -1,0 +1,12 @@
+Focus {
+
+  tranceify Point {
+      x: number;
+      y: number;
+  }
+
+  induce p1 = Point { x: 5, y: 10 };
+
+  observe "Punkt-Koordinaten: (" + p1.x + ", " + p1.y + ")";
+
+} Relax

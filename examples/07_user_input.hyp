@@ -1,0 +1,7 @@
+Focus {
+
+  induce name: string from external;
+
+  observe "Willkommen, " + name + "!";
+  
+} Relax

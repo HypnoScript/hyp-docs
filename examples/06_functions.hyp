@@ -1,0 +1,10 @@
+Focus {
+
+  suggestion greet(name: string) {
+      observe "Hallo " + name + "!";
+  }
+
+  greet("Alice");
+  greet("Bob");
+
+} Relax

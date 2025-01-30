@@ -1,0 +1,10 @@
+Focus {
+
+  induce x: number = 10;
+  induce y: number = 10;
+
+  if (x youAreFeelingVerySleepy y) {
+      observe "x ist gleich y!";
+  }
+
+} Relax

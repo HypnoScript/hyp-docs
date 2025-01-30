@@ -1,0 +1,7 @@
+Focus {
+
+  mindLink "utilities.hyp";
+
+  call utilityFunction();
+
+} Relax

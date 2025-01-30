@@ -1,0 +1,13 @@
+Focus {
+
+  suggestion factorial(n: number): number {
+      if (n == 0) {
+          awaken 1;
+      }
+      awaken n * factorial(n - 1);
+  }
+
+  induce result = factorial(5);
+  observe "5! = " + result;
+
+} Relax

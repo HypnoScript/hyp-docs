@@ -1,0 +1,9 @@
+Focus {
+
+  induce a: number = 5;
+  induce b: number = 10;
+  induce sum: number = a + b;
+
+  observe "Summe: " + sum;
+
+} Relax
